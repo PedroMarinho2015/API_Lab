@@ -1,3 +1,4 @@
+@@ -0,0 +1,107 @@
 "use strict";
 
 var Cylon = require("cylon");
@@ -25,11 +26,11 @@ devices: {
 
 // Defines the robot's functions 
 work1: function(my) { this.led1.turnOn(); },
-//work2: function(my) { this.led1.turnOff(); },
+work2: function(my) { this.led1.turnOff(); },
 work3: function(my) { this.led2.turnOn(); },
 work4: function(my) { this.led2.turnOff(); },
-work5: function(my) { every((20).second(), this.led3.toggle); },
-
+work5: function(my) { this.led3.turnOn(); },
+work6: function(my) { this.led3.turnOff(); }
 
 });
 
@@ -105,3 +106,4 @@ let port = 5000;
 app.listen(port);
 console.log('Webserver started: http://localhost:' + port);
 module.exports = app;
+\ No newline at end of file
