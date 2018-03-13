@@ -29,7 +29,8 @@ work1: function(my) { this.led1.turnOn(); },
 work2: function(my) { this.led1.turnOff(); },
 work3: function(my) { this.led2.turnOn(); },
 work4: function(my) { this.led2.turnOff(); },
-work5: function(my) { every((20).second(), this.led3.turnOn()); 
+work5: function(my) { every((20).second(), this.led3.toggle()); 
+work6: function(my) { this.led3.turnOff()                     
 },
 
 });
