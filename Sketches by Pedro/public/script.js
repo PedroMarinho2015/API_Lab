@@ -20,16 +20,16 @@ function logReceived(d) {
 	console.log(d);
 }
 
-function turnTVON(){
+function turnMixerON(){
 
-	console.log("TV is ON");
-	document.getElementById("TV-frame").src="tv-on.png"
+	console.log("Mixer is ON");
+	document.getElementById("mixer").src="mixer.gif"
 
 }
 
-function turnTVOFF(){
+function turnMixerOFF(){
 	
-	console.log("TV is OFF");
-	document.getElementById("TV-frame").src="tv-off.png"
+	console.log("Mixer is OFF");
+	document.getElementById("mixer").src="still.jpg"
 
 }
