@@ -1,4 +1,3 @@
-@@ -0,0 +1,107 @@
 "use strict";
 
 var Cylon = require("cylon");
@@ -29,10 +28,8 @@ work1: function(my) { this.led1.turnOn(); },
 work2: function(my) { this.led1.turnOff(); },
 work3: function(my) { this.led2.turnOn(); },
 work4: function(my) { this.led2.turnOff(); },
-work5: function(my) {
-   every((20).second(), this.led3.toggle); 
+work5: function(my) { every((20).second(), this.led3.turnOn()); 
 },
-
 
 });
 
