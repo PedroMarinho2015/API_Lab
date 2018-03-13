@@ -13,15 +13,15 @@
 
 <body>
  <div class="center"> 
-  <h1>Turn the TV ON/OFF</h1>
+  <h1>TV CONTROL INTERFACE (Demo by Pedro) </h1>
 
   <img id="TV-frame" src="tv-off.png" alt="TV controls">
   <br>
  </div>
 
   <div class="center">
-   <input type="submit" value="ON"  onclick="send('button1Pressed'); turnTVON();">  
-   <input type="submit" value="OFF"  onclick="send('button2Pressed'); turnTVOFF();">
+   <input id="button1" type="submit" value="ON"  onclick="send('button1Pressed'); turnTVON();">  
+   <input id="button2" type="submit" value="OFF"  onclick="send('button2Pressed'); turnTVOFF();">
   </div>
   <br>
 
