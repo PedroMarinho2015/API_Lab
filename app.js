@@ -9,6 +9,7 @@ var bodyParser = require('body-parser');
 var expressWs = require('express-ws');
 var ews = expressWs(express());
 var app = ews.app;
+var counter = 0;
 
 // Defines the robot's attributes 
 var robot = Cylon.robot({
@@ -42,7 +43,27 @@ ws.on('message', function (msg) {
 
 // A series of if statements waiting for browser to make a request
 if(msg =="button1Pressed"){
-robot.work1();
+
+  robot.work1();
+
+  // Check the state of the TV (if it's on or off) to perform an action based on that.
+
+  counter = counter +1;
+
+  // If the counter is an odd number the TV if ON
+  if (counter%2 == 1){
+
+      // Turn the TV OFF
+      console.log("TV is ON");
+  }
+
+  // If the counter is an even number the TV if OFF
+  else{
+
+    // Turn the TV ON
+    console.log("TV is OFF");
+  }
+
 }	
 if(msg =="button2Pressed"){
 robot.work2();
