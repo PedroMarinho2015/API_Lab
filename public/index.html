@@ -4,7 +4,7 @@
 <head>
 
   <meta charset="utf-8" />
-  <title>API Lab</title>
+  <title>API Lab - Arduino-based Control Interface</title>
   <link href="styles.css" rel="stylesheet">
   <script src="lib/reconnecting-websocket.js"></script>
   <script src="script.js"></script>
@@ -12,38 +12,36 @@
 </head>
 
 <body>
+
   <h1>Turn the TV ON/OFF</h1>
 
   <iframe id="TV" width="560" height="315" src="https://www.youtube.com/embed/5HHq7xqG4Ws?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
   <br>
 
   <div> 
-    <input class ="connectButton" type="submit" value="ON"  onclick="send('button1Pressed');">
+    <input type="submit" value="ON"  onclick="send('button1Pressed');">
   </div>
   <br>
 
   <div> 
-    <input  class ="connectButton" type="submit" value="OFF"  onclick="send('button2Pressed');">
+    <input type="submit" value="OFF"  onclick="send('button2Pressed');">
+  </div>
+  <br>
+
+  <h1>Control All Lights in the House</h1>
+  <div> 
+    <input type="submit" value="PIN 4 ON"  onclick="send('button3Pressed');"> 
   </div>
   <br>
 
   <div> 
-        <input  class ="connectButton" type="submit" value="PIN 4 ON"  onclick="send('button3Pressed');"> 
+    <input type="submit" value="PIN 4 OFF"  onclick="send('button4Pressed');">
   </div>
-  <br>
 
+  <h1>Check if the Front Door is Locked</h1>
   <div> 
-      <input class ="connectButton" type="submit" value="PIN 4 OFF"  onclick="send('button4Pressed');">
+    <input id="frontdoor" type="submit" value="UNLOCKED"  onclick="send('button5Pressed');">
   </div>
-
-  <h1> circle home device when it is unpaired and on </h1>
-
-  <div> 
-      <input class ="connectButton" type="submit" value=" ON"  onclick="send('button5Pressed');">
-  </div>
-
-
-
 
 </body>
 
