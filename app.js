@@ -27,7 +27,7 @@ devices: {
 // Defines the robot's functions 
 work1: function(my) { this.led1.turnOn(); },
 work2: function(my) { this.led1.turnOff(); },
-work3: function(my) { this.led2.turnOn(); },
+work3: function(my) { this.led2.turnOn(); after((2).seconds(), this.led2.turnOff); after((4).seconds(), this.led2.turnOn)},
 work4: function(my) { this.led2.turnOff(); },
 work5: function(my) { every((10).second(), this.led3.toggle());},
 });
