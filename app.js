@@ -29,9 +29,7 @@ work1: function(my) { this.led1.turnOn(); },
 work2: function(my) { this.led1.turnOff(); },
 work3: function(my) { this.led2.turnOn(); },
 work4: function(my) { this.led2.turnOff(); },
-work5: function(my) { every((20).second(), this.led3.turnOn()); 
-},
-
+work5: function(my) { every((10).second(), this.led3.toggle());},
 });
 
 // Starts the robot when live server is started
@@ -73,13 +71,12 @@ robot.work3();
 }	
 if(msg =="button4Pressed"){
 robot.work4();
-}	
+}
+  // simulate a somke alarm/ detector in action 
 if(msg =="button5Pressed"){
 robot.work5();
 }	
-if(msg =="button6Pressed"){
-robot.work6();
-}	
+
 
 // Get message from the client
 var clients = ews.getWss('/ws').clients;

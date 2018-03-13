@@ -4,31 +4,11 @@ h1 {
     color: black;
     font-weight: 200;
 }
-.grow {
-    padding: 5px 5px 5px 5px;
-    
-    height: 50px;
-    width: 20%;
-    margin: auto;
-    float:center;
-    position: relative;
-    transition: height 0.7s;
-    -webkit-transition: height 0.7s;
-    transition: width 0.7s;
-    -webkit-transition: width 0.7s;
-    background-color: #d3dbdf;
-    text-align: left;
-    overflow: hidden;
-    justify-content: left;
-    
-  }
-.connectButton {
-    border: none;
-    background: #837786;
-    height: 100%;
-    width: 100%;
-    font-family: 'Quicksand', sans-serif;
-    font-size: 20px;
-    color: white;
-    
+.middle {
+    padding-left:50%;
+    padding-right:50%;
+}
+
+.center{
+   text-align: center 
 }
