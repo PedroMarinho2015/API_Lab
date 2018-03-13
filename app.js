@@ -52,7 +52,7 @@ if(msg =="button1Pressed"){
   if (counter%2 == 1){
 
       // Turn the TV OFF
-      console.log("TV is ON");
+         
   }
 
   // If the counter is an even number the TV if OFF

@@ -19,3 +19,17 @@ function send(str) {
 function logReceived(d) {
 	console.log(d);
 }
+
+function turnTVON(){
+
+	console.log("TV is ON");
+	document.getElementById("TV-frame").src="tv-on.png"
+
+}
+
+function turnTVOFF(){
+	
+	console.log("TV is OFF");
+	document.getElementById("TV-frame").src="tv-off.png"
+
+}
