@@ -1,0 +1,32 @@
+  <!DOCTYPE HTML>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8" />
+    <title>API Lab - Arduino-based Control Interface</title>
+    <link href="styles.css" rel="stylesheet">
+    <script src="lib/reconnecting-websocket.js"></script>
+    <script src="script.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Noto Sans' rel='stylesheet'>
+    
+  </head>
+
+  <body>
+
+    <div class="center"> 
+      <h1>Super Ultra Smart Tea Mixer/h1>
+      <img id="TV-frame" src="tv-off.png" alt="TV controls">    
+    </div>
+    <br>
+
+    <div class="center">
+      <input id ="button1" type="submit" value="ON"  onclick="send('button1Pressed'); turnTVON();">  
+      <input id ="button2" type="submit" value="OFF"  onclick="send('button2Pressed'); turnTVOFF();">  
+    </div>
+    <br>
+
+
+  </body>
+
+</html>
