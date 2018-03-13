@@ -1,41 +1,46 @@
 <!DOCTYPE HTML>
 <html lang="en">
 
-<head>
+  <head>
 
-  <meta charset="utf-8" />
-  <title>API Lab - Arduino-based Control Interface</title>
-  <link href="styles.css" rel="stylesheet">
-  <script src="lib/reconnecting-websocket.js"></script>
-  <script src="script.js"></script>
-  
-</head>
+    <meta charset="utf-8" />
+    <title>API Lab - Arduino-based Control Interface</title>
+    <link href="styles.css" rel="stylesheet">
+    <script src="lib/reconnecting-websocket.js"></script>
+    <script src="script.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Noto Sans' rel='stylesheet'>
+    
+  </head>
 
-<body>
- <div class="center"> 
-  <h1>Turn the TV ON/OFF</h1>
+  <body>
 
-  <img id="TV-frame" src="tv-off.png" alt="TV controls">
-  <br>
- </div>
+    <div class="center"> 
+      <h1>REMOTE TV CONTROL (Demo by Pedro)</h1>
+      <img id="TV-frame" src="tv-off.png" alt="TV controls">    
+    </div>
+    <br>
 
-  <div class="center">
-   <input type="submit" value="ON"  onclick="send('button1Pressed'); turnTVON();">  
-   <input type="submit" value="OFF"  onclick="send('button2Pressed'); turnTVOFF();">
-  </div>
-  <br>
+    <div class="center">
+      <input id ="button1" type="submit" value="ON"  onclick="send('button1Pressed'); turnTVON();">  
+      <input id ="button2" type="submit" value="OFF"  onclick="send('button2Pressed'); turnTVOFF();">  
+    </div>
+    <br>
 
-  <h1>Control All Lights in the House</h1>
-  <div class="middle"> 
+
+    <h1>Control All Lights in the House (Demo by Alexandros)</h1>
+    <div class="middle"> 
     <input type="submit" value="PIN 4 ON"  onclick="send('button3Pressed');"> 
-  </div>
-  <div class="middle"> 
+    </div>
+    <div class="middle"> 
     <input type="submit" value="PIN 4 OFF"  onclick="send('button4Pressed');">
-  </div>
+    </div>
 
-  <h1> smoke alarm  </h1>
-<div class="middle"> 
-     <input class ="connectButton" type="submit" value="ON"  onclick="send('button5Pressed');">
-</div>
+
+    <h1> smoke alarm (Demo by Hafsa)</h1>
+    <div class="middle"> 
+    <input class ="connectButton" type="submit" value="ON"  onclick="send('button5Pressed');">
+    </div>
+
+  </body>
 
 </html>
