@@ -1,0 +1,26 @@
+h1 {
+    text-align: center;
+    font-family: 'Quicksand', Impact;
+    color: black;
+    font-weight: 250;
+}
+.middle {
+    padding-left:50%;
+    padding-right:50%;
+}
+
+.center{
+   text-align: center 
+}
+
+input{
+    background-color: grey;
+    border: none;
+    color: white;
+    padding: 0.8% 1.5%;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+}
+}
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-10" />
+  <title>API Lab - Arduino-based Control Interface</title>
+  <link href="style.css" rel="stylesheet">
+  <script src="reconnecting-websocket.js"></script>
+  <script src="script.js"></script>
+  
+</head>
+
+<script src="script.js"></script>
+<link href="style.css" rel="stylesheet">
+
+<body>
+        <div class="center"> 
+         <h1>Blink the Lights!</h1>
+       
+         <img id="Light" src="light-off.png" alt="Light switch">
+         <br>
+        </div>
+       <br></br>
+         <div class="center">
+          <input type="submit" value="Turn the Light On"  onclick="send('button3Pressed'); LightOn();">  
+
+          <input type="submit" value="Turn the Light Off"  onclick="send('button4Pressed'); LightOff();">
+         </div>
+         <br>
+       
+
+
+
