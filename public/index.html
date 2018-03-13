@@ -6,38 +6,44 @@
   <meta charset="utf-8" />
   <title>API Lab</title>
   <link href="styles.css" rel="stylesheet">
+  <script src="lib/reconnecting-websocket.js"></script>
+  <script src="script.js"></script>
   
 </head>
 
 <body>
-  <h1>  TV on and off   </h1>
+  <h1>Turn the TV ON/OFF</h1>
 
-  <div class="grow"> 
+  <iframe id="TV" width="560" height="315" src="https://www.youtube.com/embed/5HHq7xqG4Ws?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+  <br>
+
+  <div> 
     <input class ="connectButton" type="submit" value="ON"  onclick="send('button1Pressed');">
   </div>
   <br>
 
-  <div class="grow"> 
+  <div> 
     <input  class ="connectButton" type="submit" value="OFF"  onclick="send('button2Pressed');">
   </div>
   <br>
 
-  <div class="grow"> 
+  <div> 
         <input  class ="connectButton" type="submit" value="PIN 4 ON"  onclick="send('button3Pressed');"> 
   </div>
+  <br>
 
-  <div class="grow"> 
+  <div> 
       <input class ="connectButton" type="submit" value="PIN 4 OFF"  onclick="send('button4Pressed');">
   </div>
 
   <h1> circle home device when it is unpaired and on </h1>
 
-  <div class="grow"> 
+  <div> 
       <input class ="connectButton" type="submit" value=" ON"  onclick="send('button5Pressed');">
   </div>
 
-<script src="lib/reconnecting-websocket.js"></script>
-<script src="script.js"></script>
+
+
 
 </body>
 
