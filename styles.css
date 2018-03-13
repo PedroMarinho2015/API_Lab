@@ -3,34 +3,6 @@ body {
     background-color :rgb(216, 191, 191);
     background-size: cover;
 }
-.grow {
-    padding: 5px 5px 5px 5px;
-    
-    height: 50px;
-    width: 15%;
-    margin: auto;
-    float:center;
-    position: relative;
-    transition: height 0.5s;
-    -webkit-transition: height 0.5s;
-    transition: width 0.5s;
-    -webkit-transition: width 0.5s;
-    background-color: #d3dbdf;
-    text-align: left;
-    overflow: hidden;
-    justify-content: left;
-    
-  }
-.connectButton {
-    border: none;
-    background: #837786;
-    height: 100%;
-    width: 100%;
-    font-family: 'Quicksand', sans-serif;
-    font-size: 20px;
-    color: white;
-    
-}
 
 #button1{   
 
@@ -56,3 +28,10 @@ body {
     font-size: 16px;
 }
 
+.middle {
+    padding-left:50%;
+    padding-right:50%;
+}
+
+.center{
+   text-align: center;
