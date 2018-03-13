@@ -33,3 +33,20 @@ function turnTVOFF(){
 	document.getElementById("TV-frame").src="tv-off.png"
 
 }
+
+function LEDflicker(){ //LED-Flicker
+
+	console.log ("Flickering LED on PIN 4")
+var Flickering
+Flickering.robot({
+	connections: {
+		arduino: { adaptor: 'firmata', port: '/dev/ttyACM0' }
+	  },
+	  devices: {
+		led: { driver: 'led', pin: 4 }
+	  },
+	  work: function(my) {
+		every((1).second(), my.led.toggle);
+	  }
+	}).start();
+}
